@@ -1,0 +1,25 @@
+name: Pages Smoke Check
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Verify required pages exist
+        run: |
+          test -f index.html
+          test -f PrivacyPolicy.html
+
+      - name: Verify key content is present
+        run: |
+          grep -q "<title>PFRA Tracker</title>" index.html
+          grep -q "PFRA Tracker - Privacy Policy" PrivacyPolicy.html
+          grep -q "josh.saez@yahoo.com" PrivacyPolicy.html

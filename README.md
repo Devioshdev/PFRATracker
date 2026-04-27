@@ -1,76 +1,25 @@
-[PrivacyPolicy.html](https://github.com/user-attachments/files/26919657/PrivacyPolicy.html)
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PFRA Tracker - Privacy Policy</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            max-width: 700px;
-            margin: 40px auto;
-            padding: 0 20px;
-            line-height: 1.6;
-            color: #333;
-        }
-        h1 { font-size: 24px; }
-        h2 { font-size: 18px; margin-top: 30px; }
-        p, li { font-size: 15px; }
-        .updated { color: #666; font-size: 14px; }
-    </style>
-</head>
-<body>
-    <h1>PFRA Tracker - Privacy Policy</h1>
-    <p class="updated">Last updated: April 20, 2026</p>
+# PFRA Tracker Site
 
-    <h2>Overview</h2>
-    <p>PFRA Tracker ("the App") is a fitness assessment calculator and tracker for the Air Force Physical Fitness Readiness Assessment. This App is not affiliated with, endorsed by, or connected to the United States Air Force or the Department of Defense.</p>
-    <p>Your privacy is important to us. This Privacy Policy explains what information is collected and how it is used.</p>
+This repository hosts the public support pages for the PFRA Tracker app.
 
-    <h2>Data Stored on Your Device</h2>
-    <p>All personal data you enter into the App — including your profile information (age group, sex, height) and fitness test results — is stored locally on your device only. This data is never transmitted to our servers or any third party. If you delete the App, this data is permanently removed.</p>
+Live site:
+- Privacy policy: `https://joshsaez.github.io/PFRATracker/PrivacyPolicy.html`
+- Project page: `https://joshsaez.github.io/PFRATracker/`
 
-    <h2>Advertising</h2>
-    <p>The App displays banner advertisements provided by Google AdMob. To support ad delivery, Google AdMob may collect and use certain information, including:</p>
-    <ul>
-        <li>Device identifiers (such as the Advertising Identifier / IDFA)</li>
-        <li>IP address</li>
-        <li>General device information (device model, operating system version)</li>
-        <li>Ad interaction data (impressions, clicks)</li>
-    </ul>
-    <p>This information is collected and processed by Google in accordance with <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</p>
+## What's in this repo
 
-    <h2>App Tracking Transparency</h2>
-    <p>When you first open the App, you will be asked whether you allow tracking across apps and websites owned by other companies. This permission is used by Google AdMob to deliver personalized advertisements.</p>
-    <ul>
-        <li>If you allow tracking, AdMob may show you personalized ads based on your interests.</li>
-        <li>If you deny tracking, AdMob will show non-personalized ads. The App will function the same either way.</li>
-    </ul>
-    <p>You can change this setting at any time in your device's Settings under Privacy &amp; Security &gt; Tracking.</p>
+- `index.html`: lightweight landing page for the app's public web presence
+- `PrivacyPolicy.html`: privacy policy linked from the app and store listings
+- `.github/workflows/pages-smoke-check.yml`: basic validation so accidental broken deploys are easier to catch
+- `.nojekyll`: tells GitHub Pages to serve the site as plain static files
 
-    <h2>Data We Do Not Collect</h2>
-    <p>We do not collect, store, or transmit any of the following:</p>
-    <ul>
-        <li>Your name, email address, or contact information</li>
-        <li>Your location</li>
-        <li>Health or fitness data (all test results remain on your device)</li>
-        <li>Account or login credentials (the App does not require an account)</li>
-    </ul>
+## Safe update workflow
 
-    <h2>Third-Party Services</h2>
-    <p>The App uses the following third-party service:</p>
-    <ul>
-        <li><strong>Google AdMob</strong> — for displaying advertisements. Google's privacy policy can be found at <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>.</li>
-    </ul>
+1. Keep `PrivacyPolicy.html` URL and filename unchanged.
+2. Make content changes in a branch first.
+3. Preview the HTML before merging.
+4. Merge only after the GitHub Actions check passes.
 
-    <h2>Children's Privacy</h2>
-    <p>The App is not directed at children under the age of 13. We do not knowingly collect personal information from children under 13.</p>
+## Important note
 
-    <h2>Changes to This Policy</h2>
-    <p>We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an updated date.</p>
-
-    <h2>Contact</h2>
-    <p>If you have questions about this Privacy Policy, please contact us at: <strong>josh.saez@yahoo.com</strong></p>
-</body>
-</html>
+This repository does not contain the mobile app source code. It is only for the public-facing website and policy pages used by the deployed app.
