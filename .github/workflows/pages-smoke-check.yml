@@ -20,6 +20,6 @@ jobs:
 
       - name: Verify key content is present
         run: |
-          grep -q "<title>PFRA Tracker</title>" index.html
+          grep -q "<title>Josh Saez Apps</title>" index.html
           grep -q "PFRA Tracker - Privacy Policy" PrivacyPolicy.html
-          grep -q "josh.saez@yahoo.com" PrivacyPolicy.html
+          grep -q "contact@deviosh.com" PrivacyPolicy.html
