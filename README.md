@@ -1,10 +1,10 @@
-# Josh Saez Apps Site
+# Deviosh Apps Site
 
-This repository hosts the public support pages for current and future apps by Josh Saez.
+This repository hosts the public support pages for current and future apps by Deviosh.
 
 Live site:
-- Site home: `https://joshsaez.github.io/PFRATracker/`
-- PFRA Tracker privacy policy: `https://joshsaez.github.io/PFRATracker/PrivacyPolicy.html`
+- Site home: `https://devioshdev.github.io/PFRATracker/`
+- PFRA Tracker privacy policy: `https://devioshdev.github.io/PFRATracker/PrivacyPolicy.html`
 
 ## What's in this repo
 
